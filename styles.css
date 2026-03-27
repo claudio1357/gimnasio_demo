@@ -324,6 +324,7 @@
     }
 
     .btn-primary {
+      margin-top: 2rem;
       background: var(--gold);
       color: var(--black);
       font-family: var(--font-cond);
@@ -340,6 +341,7 @@
     }
 
     .btn-primary:hover {
+     margin-top: 2rem;
       background: var(--gold-light);
       transform: translateY(-2px);
       box-shadow: 0 8px 25px rgba(201,168,76,0.35);
