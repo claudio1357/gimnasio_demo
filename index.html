@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- SEO Meta Tags -->
+  <title> GYM | Transforma Tu Cuerpo, Transforma Tu Vida</title>
+  <meta name="description" content=" GYM – El gimnasio premium donde élite y resultados se encuentran. Entrenamiento personalizado, clases grupales, nutrición y más en Lima, Perú." />
+  <meta name="keywords" content="gimnasio premium, gym Lima, entrenamiento personalizado, fitness, musculación, clases grupales" />
+  <meta name="author" content=" GYM" />
+  <meta property="og:title" content=" GYM | Transforma Tu Cuerpo" />
+  <meta property="og:description" content="El gimnasio premium donde los límites se rompen." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       PROGRESS BAR
+  ══════════════════════════════════════ -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">GYM<span>.</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#entrenadores">Entrenadores</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto" class="nav-cta">Únete ahora</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero"         onclick="closeMenu()">Inicio</a>
+    <a href="#servicios"    onclick="closeMenu()">Servicios</a>
+    <a href="#planes"       onclick="closeMenu()">Planes</a>
+    <a href="#entrenadores" onclick="closeMenu()">Entrenadores</a>
+    <a href="#testimonios"  onclick="closeMenu()">Testimonios</a>
+    <a href="#contacto"     onclick="closeMenu()" style="color:var(--gold)">Únete ahora</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-line"></div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow">
+        <span>Lima, Perú · Est. 2018</span>
+      </div>
+
+      <h1 class="hero-title">
+        TRANSFORMA<br>
+        <span class="line-2">TU CUERPO,</span>
+        <span class="line-3">TRANSFORMA TU VIDA.</span>
+      </h1>
+
+      <p class="hero-sub">
+        El gimnasio premium donde la élite entrena. Equipos de última generación, entrenadores certificados y un ambiente diseñado para sacar lo mejor de ti.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#planes" class="btn-primary">Ver Planes</a>
+        <a href="#servicios" class="btn-outline">Explorar Servicios</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="container">
+        <div class="stat">
+          <div class="stat-number">2,400<span style="color:var(--white);font-size:1.5rem">+</span></div>
+          <div class="stat-label">Miembros activos</div>
+        </div>
+        <div class="stat" style="animation-delay:1.2s">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Entrenadores élite</div>
+        </div>
+        <div class="stat" style="animation-delay:1.3s">
+          <div class="stat-number">98<span style="color:var(--white);font-size:1.5rem">%</span></div>
+          <div class="stat-label">Satisfacción</div>
+        </div>
+        <div class="stat" style="animation-delay:1.4s">
+          <div class="stat-number">24<span style="color:var(--white);font-size:1.2rem">/7</span></div>
+          <div class="stat-label">Disponible</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════ -->
+  <section id="servicios">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <div class="section-divider">
+            <span class="section-label">Lo que ofrecemos</span>
+          </div>
+          <h2 class="section-title reveal">Nuestros<br><span class="gold">Servicios</span></h2>
+        </div>
+        <p class="section-sub reveal reveal-delay-1">
+          Todo lo que necesitas para alcanzar tus metas en un solo lugar, con tecnología de vanguardia y expertos de clase mundial.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Pesas -->
+        <div class="service-card reveal">
+          <span class="service-icon">🏋️</span>
+          <h3 class="service-name">Sala de Pesas</h3>
+          <p class="service-desc">Más de 300 máquinas y pesos libres de última generación. Desde mancuernas hasta sistemas de cable completos para todo tipo de entrenamiento.</p>
+          <span class="service-tag">Fuerza & Hipertrofia</span>
+        </div>
+
+        <!-- Cardio -->
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-icon">🏃</span>
+          <h3 class="service-name">Zona Cardio</h3>
+          <p class="service-desc">Trotadoras, elípticas, bicicletas y rowers premium con pantallas interactivas y tracking de rendimiento en tiempo real.</p>
+          <span class="service-tag">Resistencia & Quema</span>
+        </div>
+
+        <!-- Clases -->
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-icon">🥊</span>
+          <h3 class="service-name">Clases Grupales</h3>
+          <p class="service-desc">Más de 40 clases semanales: Spinning, CrossFit, Yoga, Zumba, Box, HIIT y más. Instructores certificados en cada sesión.</p>
+          <span class="service-tag">Comunidad & Motivación</span>
+        </div>
+
+        <!-- Personal -->
+        <div class="service-card reveal reveal-delay-3">
+          <span class="service-icon">🎯</span>
+          <h3 class="service-name">Entrenamiento Personal</h3>
+          <p class="service-desc">Plan 100% personalizado según tus objetivos. Seguimiento nutricional, rutinas adaptadas y sesiones 1 a 1 con un experto dedicado.</p>
+          <span class="service-tag">Resultados Garantizados</span>
+        </div>
+
+        <!-- Nutrición -->
+        <div class="service-card reveal">
+          <span class="service-icon">🥗</span>
+          <h3 class="service-name">Nutrición Deportiva</h3>
+          <p class="service-desc">Asesorías nutricionales con dietistas certificados. Plan de alimentación personalizado que potencia tu entrenamiento.</p>
+          <span class="service-tag">Alimentación & Salud</span>
+        </div>
+
+        <!-- Spa -->
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-icon">🧘</span>
+          <h3 class="service-name">Zona de Recuperación</h3>
+          <p class="service-desc">Sauna, jacuzzi, crioterapia y sala de masajes. Recuperación completa para maximizar tu rendimiento y bienestar.</p>
+          <span class="service-tag">Recuperación & Bienestar</span>
+        </div>
+
+        <!-- Suplementos -->
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-icon">💊</span>
+          <h3 class="service-name">Tienda de Suplementos</h3>
+          <p class="service-desc">Proteínas, creatinas, pre-entrenos y más. Las mejores marcas del mercado con asesoría de expertos incluida.</p>
+          <span class="service-tag">Suplementación Pro</span>
+        </div>
+
+        <!-- App -->
+        <div class="service-card reveal reveal-delay-3">
+          <span class="service-icon">📱</span>
+          <h3 class="service-name">App APEX</h3>
+          <p class="service-desc">Reserva clases, mide tu progreso, accede a tus rutinas y conecta con tu entrenador desde tu celular en cualquier momento.</p>
+          <span class="service-tag">Tecnología & Control</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PLANS
+  ══════════════════════════════════════ -->
+  <section id="planes">
+    <div class="container">
+      <div class="plans-header">
+        <span class="section-label reveal">Elige tu camino</span>
+        <h2 class="section-title reveal reveal-delay-1">Planes & <span class="gold">Precios</span></h2>
+        <p class="section-sub reveal reveal-delay-2">Sin contratos de permanencia. Cancela cuando quieras. Empieza tu transformación hoy.</p>
+      </div>
+
+      <div class="plans-grid">
+
+        <!-- BÁSICO -->
+        <div class="plan-card reveal">
+          <p class="plan-name">Básico</p>
+          <div class="plan-price"><sup>S/.</sup>89</div>
+          <p class="plan-period">por mes</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="included">Acceso sala de pesas</li>
+            <li class="included">Zona cardio ilimitada</li>
+            <li class="included">2 clases grupales/semana</li>
+            <li class="included">Vestidores y duchas</li>
+            <li>Entrenador personal</li>
+            <li>Zona de recuperación</li>
+            <li>Asesoría nutricional</li>
+            <li>App premium</li>
+          </ul>
+          <button class="plan-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Comenzar</button>
+        </div>
+
+        <!-- INTERMEDIO -->
+        <div class="plan-card featured reveal reveal-delay-1">
+          <div class="plan-badge">⭐ Más popular</div>
+          <p class="plan-name">Intermedio</p>
+          <div class="plan-price gold"><sup>S/.</sup>159</div>
+          <p class="plan-period">por mes</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="included">Acceso sala de pesas</li>
+            <li class="included">Zona cardio ilimitada</li>
+            <li class="included">Clases grupales ilimitadas</li>
+            <li class="included">Vestidores y duchas</li>
+            <li class="included">4 sesiones personal/mes</li>
+            <li class="included">Zona de recuperación</li>
+            <li>Asesoría nutricional</li>
+            <li>App premium</li>
+          </ul>
+          <button class="plan-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Comenzar</button>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="plan-card reveal reveal-delay-2">
+          <p class="plan-name">Premium</p>
+          <div class="plan-price"><sup>S/.</sup>249</div>
+          <p class="plan-period">por mes</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="included">Acceso sala de pesas</li>
+            <li class="included">Zona cardio ilimitada</li>
+            <li class="included">Clases grupales ilimitadas</li>
+            <li class="included">Vestidores y duchas</li>
+            <li class="included">Entrenador personal ilimitado</li>
+            <li class="included">Zona de recuperación</li>
+            <li class="included">Asesoría nutricional</li>
+            <li class="included">App premium + Análisis IA</li>
+          </ul>
+          <button class="plan-btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Comenzar</button>
+        </div>
+
+      </div>
+
+      <p style="text-align:center; color:var(--muted); font-size:0.88rem; margin-top:2rem;" class="reveal">
+        * Precios en Soles peruanos (PEN). Incluye IGV. Primer mes con 20% de descuento usando el código <span class="gold">APEX20</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TRAINERS
+  ══════════════════════════════════════ -->
+  <section id="entrenadores">
+    <div class="container">
+      <div class="trainers-header">
+        <div class="section-divider">
+          <span class="section-label">Conoce al equipo</span>
+        </div>
+        <h2 class="section-title reveal">Entrenadores <span class="gold">Élite</span></h2>
+        <p class="section-sub reveal reveal-delay-1">Profesionales certificados con experiencia internacional, comprometidos con tu progreso.</p>
+      </div>
+
+      <div class="trainers-grid">
+
+        <div class="trainer-card reveal">
+          <span class="trainer-number">01</span>
+          <img class="trainer-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80" alt="Diego Ramírez" loading="lazy" />
+          <div class="trainer-info">
+            <p class="trainer-role">Fuerza & Powerlifting</p>
+            <h3 class="trainer-name">Diego Ramírez</h3>
+            <p class="trainer-bio">Campeón nacional de powerlifting, 10 años de experiencia. Especialista en periodización y fuerza máxima.</p>
+          </div>
+        </div>
+
+        <div class="trainer-card reveal reveal-delay-1">
+          <span class="trainer-number">02</span>
+          <img class="trainer-img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&q=80" alt="Valeria Torres" loading="lazy" />
+          <div class="trainer-info">
+            <p class="trainer-role">CrossFit & HIIT</p>
+            <h3 class="trainer-name">Valeria Torres</h3>
+            <p class="trainer-bio">CrossFit Level 3, atleta de competencia. Especializada en acondicionamiento funcional de alto rendimiento.</p>
+          </div>
+        </div>
+
+        <div class="trainer-card reveal reveal-delay-2">
+          <span class="trainer-number">03</span>
+          <img class="trainer-img" src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=500&q=80" alt="Marcos Quispe" loading="lazy" />
+          <div class="trainer-info">
+            <p class="trainer-role">Nutrición & Pérdida de Peso</p>
+            <h3 class="trainer-name">Marcos Quispe</h3>
+            <p class="trainer-bio">Nutricionista deportivo y entrenador personal. Ha transformado más de 500 cuerpos en los últimos 8 años.</p>
+          </div>
+        </div>
+
+        <div class="trainer-card reveal reveal-delay-3">
+          <span class="trainer-number">04</span>
+          <img class="trainer-img" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&q=80" alt="Ana Mendoza" loading="lazy" />
+          <div class="trainer-info">
+            <p class="trainer-role">Yoga & Bienestar</p>
+            <h3 class="trainer-name">Ana Mendoza</h3>
+            <p class="trainer-bio">Instructora certificada de Yoga y Pilates. Especialista en recuperación, flexibilidad y mindfulness deportivo.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════ -->
+  <section id="testimonios">
+    <div class="container testimonials-header">
+      <span class="section-label reveal">Lo que dicen</span>
+      <h2 class="section-title reveal reveal-delay-1">Historias de <span class="gold">Éxito</span></h2>
+    </div>
+
+    <div class="ticker-wrap">
+      <div class="ticker-track" id="ticker">
+        <!-- Will be duplicated by JS -->
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"En 6 meses bajé 18 kg y gané una condición física que nunca imaginé. APEX cambió completamente mi vida. El equipo de entrenadores es increíble."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://i.pravatar.cc/150?img=5" alt="Carlos M." />
+            <div><div class="testi-name">Carlos Mendoza</div><div class="testi-meta">Miembro desde 2023 · Plan Intermedio</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Las instalaciones son de otro nivel. Nunca había entrenado en un lugar tan equipado y con un ambiente tan motivador. Vale cada sol."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://i.pravatar.cc/150?img=9" alt="Lucía R." />
+            <div><div class="testi-name">Lucía Ríos</div><div class="testi-meta">Miembro desde 2022 · Plan Premium</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Mi entrenador Diego me ayudó a mejorar mi marca personal en sentadillas en un 40% en solo 3 meses. La metodología de APEX es única."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://i.pravatar.cc/150?img=3" alt="Rodrigo F." />
+            <div><div class="testi-name">Rodrigo Flores</div><div class="testi-meta">Miembro desde 2024 · Plan Premium</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Venía de años sin hacer ejercicio. Valeria me ayudó a empezar desde cero con paciencia y profesionalismo. Ahora no puedo imaginar mi vida sin APEX."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://i.pravatar.cc/150?img=16" alt="Patricia S." />
+            <div><div class="testi-name">Patricia Salinas</div><div class="testi-meta">Miembro desde 2023 · Plan Básico</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"La zona de recuperación es lo mejor. Después de cada sesión intensa, el sauna y el masaje hacen que la recuperación sea completamente diferente."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://i.pravatar.cc/150?img=12" alt="Javier T." />
+            <div><div class="testi-name">Javier Torres</div><div class="testi-meta">Miembro desde 2022 · Plan Premium</div></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"La asesoría nutricional de Marcos transformó mi relación con la comida. Perdí grasa, gané músculo y me siento con más energía que a los 25 años."</p>
+          <div class="testi-author">
+            <img class="testi-avatar" src="https://i.pravatar.cc/150?img=20" alt="Sandra V." />
+            <div><div class="testi-name">Sandra Villanueva</div><div class="testi-meta">Miembro desde 2023 · Plan Intermedio</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <span class="section-label">Hablemos</span>
+          <h2 class="section-title">Únete a <span class="gold">APEX</span></h2>
+          <p>¿Listo para comenzar tu transformación? Contáctanos y un asesor te ayudará a encontrar el plan perfecto para tus objetivos.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <strong>Ubicación</strong>
+              <span>Av. Javier Prado Este 4200, San Borja, Lima</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">⏰</div>
+            <div class="contact-detail-text">
+              <strong>Horario</strong>
+              <span>Lun–Vie: 5:00am–11:00pm · Sáb–Dom: 6:00am–9:00pm</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <strong>Teléfono</strong>
+              <span>+51 987 654 321</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <span>hola@apexgym.pe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal reveal-delay-2">
+          <div class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Tu apellido" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" placeholder="tu@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" placeholder="+51 000 000 000" />
+            </div>
+
+            <div class="form-group">
+              <label for="plan">Plan de interés</label>
+              <select id="plan">
+                <option value="">Selecciona un plan</option>
+                <option>Plan Básico – S/. 89/mes</option>
+                <option>Plan Intermedio – S/. 159/mes</option>
+                <option>Plan Premium – S/. 249/mes</option>
+                <option>Entrenamiento Personal</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" placeholder="Cuéntanos tus objetivos y cómo podemos ayudarte..."></textarea>
+            </div>
+
+            <button class="form-submit" onclick="handleFormSubmit(event)">
+              Enviar mensaje →
+            </button>
+
+            <p class="form-note">Al enviar, aceptas nuestra política de privacidad. No enviamos spam.</p>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <span>✅</span>
+            <h3 style="font-family:var(--font-display);font-size:1.8rem;margin-bottom:0.5rem;">¡Mensaje enviado!</h3>
+            <p>Gracias por contactarnos. Un asesor te escribirá en menos de 24 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div>
+          <div class="footer-logo">APEX<span class="gold">.</span></div>
+          <p class="footer-desc">El gimnasio premium de Lima donde la disciplina, la tecnología y la élite se encuentran para crear resultados extraordinarios.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Sala de Pesas</a></li>
+            <li><a href="#servicios">Zona Cardio</a></li>
+            <li><a href="#servicios">Clases Grupales</a></li>
+            <li><a href="#servicios">Entrenamiento Personal</a></li>
+            <li><a href="#servicios">Nutrición</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#entrenadores">Entrenadores</a></li>
+            <li><a href="#planes">Precios</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ubicación</h4>
+          <ul>
+            <li><a href="#">Av. Javier Prado Este 4200</a></li>
+            <li><a href="#">San Borja, Lima</a></li>
+            <li><a href="#">+51 987 654 321</a></li>
+            <li><a href="#">hola@apexgym.pe</a></li>
+          </ul>
+          <div style="margin-top:1.25rem;">
+            <h4>Horario</h4>
+            <p style="color:var(--muted);font-size:0.88rem;line-height:1.8;">
+              Lun–Vie: 5:00am – 11:00pm<br>
+              Sáb–Dom: 6:00am – 9:00pm
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <span>APEX GYM</span>. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       WHATSAPP BUTTON
+  ══════════════════════════════════════ -->
+  <a href="https://wa.me/51987654321?text=Hola%2C%20me%20interesa%20información%20sobre%20APEX%20GYM" 
+     class="whatsapp-btn" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Contáctanos por WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ══════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
